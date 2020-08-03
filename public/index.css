@@ -2,7 +2,11 @@
 
 :root {
   --primary-color: #fd951f;
+<<<<<<< HEAD
   --secondary-color: #1f5afd;
+=======
+  --secondary-color: #1fd4fd;
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
 }
 
 * {
@@ -21,8 +25,11 @@ html, body {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f9f9f9;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
+=======
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
 }
 
 .container {
@@ -31,10 +38,13 @@ body {
   max-width: 940px;
 }
 
+<<<<<<< HEAD
 .footer {
   margin-top: auto;
 }
 
+=======
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
 .button {
   background-color: var(--primary-color);
   color: white;
@@ -58,6 +68,7 @@ body {
   background-color: #d7780b;
 }
 
+<<<<<<< HEAD
 .button.delete {
   background-color: lightcoral;
 }
@@ -78,6 +89,12 @@ body {
 
 header, footer {
   background-color: black; 
+=======
+/* HEADER */
+
+header, footer {
+  background-color: black;
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
   color: white;
   width: 100%;
   padding: 32px 0;
@@ -163,10 +180,13 @@ section.form .header h3 {
   margin-bottom: 16px;
 }
 
+<<<<<<< HEAD
 form .fields {
   margin-bottom: 64px;
 }
 
+=======
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
 form .item {
   margin-bottom: 16px;
 }
@@ -208,6 +228,7 @@ form .item textarea {
   min-height: 150px;
 }
 
+<<<<<<< HEAD
 form .item span {
   padding: 8px 16px;
   background-color: var(--primary-color);
@@ -519,4 +540,8 @@ form .item #photos-preview img {
 .search-products nav ul li a:hover {
   color: black;
   font-weight: bold;
+=======
+form .fields {
+  margin-bottom: 64px;
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
 }

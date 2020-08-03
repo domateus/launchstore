@@ -12,7 +12,11 @@
 </div>
 
 <div class="item">
+<<<<<<< HEAD
   <div>Título</div>
+=======
+  <div>Nome</div>
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
   <div>
     <input 
       type="text"
@@ -26,6 +30,7 @@
 <div class="item">
   <div>Descrição</div>
   <div>
+<<<<<<< HEAD
     <textarea name="description">{{ product.description }}</textarea>
   </div>
 </div>
@@ -60,6 +65,11 @@
         <input type="hidden" name="removed_files">
       {% endif %}
     </div>
+=======
+    <textarea name="description">
+      {{ product.description }}
+    </textarea>
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
   </div>
 </div>
 
@@ -71,7 +81,10 @@
       name="price"
       placeholder="Preço do Produto"
       value="{{ product.price }}"
+<<<<<<< HEAD
       onkeydown="Mask.apply(this, 'formatBRL')"
+=======
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
     >
   </div>
   {% if product.old_price %}
@@ -91,7 +104,11 @@
   </div>
 </div>
 
+<<<<<<< HEAD
 {% if (product.status == '1') or (product.status == '0') %}
+=======
+{% if product.status %}
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
 <div class="item">
   <div>Disponível</div>
   <div>

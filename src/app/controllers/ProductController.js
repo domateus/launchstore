@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const { formatPrice, date } = require('../lib/utils')
 const Category = require(`../model/Category`)
 const Product = require(`../model/Product`)
@@ -124,5 +125,10 @@ module.exports = {
     await Product.delete(req.body.id)
 
     return res.redirect('/products/create' )
+=======
+module.exports = {
+  create(req, res) {
+    return res.render('products/create.njk')
+>>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
   }
 }
