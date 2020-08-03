@@ -18,10 +18,6 @@ nunjucks.configure('src/app/views', {
     noCache: true
 })
 
-<<<<<<< HEAD
 server.listen(3333, function() {
-=======
-server.listen(5000, function() {
->>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
-    console.log('server is ')
+    console.log('server is running')
 })

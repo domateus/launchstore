@@ -4,25 +4,16 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-<<<<<<< HEAD
     "debug": "nodemon --inspect=0.0.0.0:9229 src/server.js",
     "start": "npm-run-all -p nodemon browsersync",
     "nodemon": "nodemon src/server.js",
     "browsersync": "browser-sync start --proxy http://localhost:3333 --files 'public, src/app/views' "
-=======
-    "start": "npm-run-all -p nodemon browsersync",
-    "nodemon": "nodemon src/server.js",
-    "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, src/app/views' "
->>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
   },
   "dependencies": {
     "express": "^4.17.1",
     "intl": "^1.2.5",
     "method-override": "^3.0.0",
-<<<<<<< HEAD
     "multer": "^1.4.2",
-=======
->>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
     "nunjucks": "^3.2.1",
     "pg": "^7.18.2"
   },
