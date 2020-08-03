@@ -1,6 +1,5 @@
 const express = require('express')
 const routes = express.Router()
-<<<<<<< HEAD
 const multer = require('./app/middlewares/multer')
 const ProductController = require('./app/controllers/ProductController')
 const HomeController = require('./app/controllers/HomeController')
@@ -27,18 +26,4 @@ routes.get('/ads/create', function(req, res){
 })
 
 
-=======
-const ProductController = require('./app/controllers/ProductController')
-
-routes.get('/', function(req, res) {
-    return res.render('layout.njk')
-})
-
-routes.get('/products/create', ProductController.create)
-
-routes.get('/ads/create', function(req, res){
-    return res.redirect('products/create')
-})
-
->>>>>>> fba2c0b426da7b0b49dc41b9c898b555015b2fa5
 module.exports = routes 
