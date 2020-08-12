@@ -1,0 +1,23 @@
+section.login.container, 
+section.login.password {
+    max-width: 500px;
+}
+
+section.login.container .fields,
+section.login.password .fields {
+    margin-bottom: 32px;
+}
+
+section.login.container .footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.login.container .footer ul li a {
+    color: #777;
+}
+
+section.login.container .footer ul li a:hover {
+    color: black;
+    font-weight: bold;
+}
