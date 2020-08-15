@@ -1,12 +1,12 @@
 {% extends 'layout.njk' %}
 
+{% import "parts/card.njk" as cards%}
+
 {% block content %}
 
-    <section class="user-dashboard container form">
+    {% call cards.render('Detalhes', 'user-dashboard container') %}
+
         <form action="/users?_method=PUT" method="POST">
-            <div class="header">
-                <h3>Detalhes</h3>
-            </div>
 
             <div class="fields">
                 {% include 'user/fields.njk' %}
@@ -21,16 +21,17 @@
             <input type="hidden" name="id" value={{user.id}}>
             <button class="button delete" type="submit">Deletar</button>
         </form>
-    </section>
 
-    <script>
-        const formDelete = document.querySelector("#form-delete")
-        formDelete.addEventListener("submit", function (event) {
-            const confirmation = confirm("Tem certeza que deseja excluir sua conta?")
-            if (!confirmation) {
-                event.preventDefault()
-            }
-        })
-    </script>
+    {%endcall%}
+
+<script>
+    const formDelete = document.querySelector("#form-delete")
+    formDelete.addEventListener("submit", function (event) {
+        const confirmation = confirm("Tem certeza que deseja excluir sua conta?")
+        if (!confirmation) {
+            event.preventDefault()
+        }
+    })
+</script>
 
 {% endblock content %}

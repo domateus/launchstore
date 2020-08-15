@@ -1,0 +1,35 @@
+/* ======= USER REGISTER ======= */
+
+.users-register,
+.users-dashboard {
+    max-width: 500px;
+  }
+
+.users-ads {
+    max-width: 700px;
+}
+
+.users-ads .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+    padding: 16px 0;
+}
+
+.users-ads .item {
+    display: grid;
+    grid-template-columns: 116px 1fr;
+    align-items: start;
+    color: #444;
+}
+
+.users-ads .item .image {
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 4px -4px black;
+}

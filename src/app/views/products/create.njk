@@ -1,8 +1,10 @@
 {% extends 'layout.njk' %}
 
+{% import "parts/card.njk" as cards%}
+
 {% block content %}
 
-  <section class="container form">
+  {% call cards.render('Cadastrar Produto', 'product-create container') %}
     <form action="/products" method="POST" enctype="multipart/form-data">
       <div class="header">
         <h3>Cadastrar Produto {{productId}}</h3>
@@ -12,9 +14,9 @@
         {% include 'products/fields.njk' %}
       </div>
 
-      <button class="button" type="submit">Salvar</button>
-      
+      <button class="button" type="submit" onclick="Validate.allFields(event)">Salvar</button>
+
     </form>
-  </section>
+  {%endcall%}
 
 {% endblock content %}
